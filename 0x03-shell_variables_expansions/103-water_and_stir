@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "The sum of $(echo "ibase=water;$WATER+ibase=stir;$STIR" | bc) is $(echo "obase=bestchol;ibase=10;$(echo "ibase=water;$WATER+ibase=stir;$STIR" | bc)" | bc).\n"
+printf "The sum of $WATER + $STIR is $(echo "ibase=16;$(echo "$WATER$STIR" | tr 'a-z' 'A-Z')" | dc) in base bestchol.\n
